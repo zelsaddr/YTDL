@@ -42,7 +42,7 @@ class Maqlo {
                                                                                                   \r\n".$this->p;
       print($arr);
       echo "URL => "; $url = trim(fgets(STDIN));
-      if(!preg_match("/youtube/i", $url)){
+      if(!preg_match("/youtu/i", $url)){
         echo $this->m."URL NOT VALID! \r\n"; sleep(1); echo $this->p."Exiting...\r\n"; exit();
       }
       $dcd = json_decode($this->YTDL($url), true);
